@@ -50,6 +50,8 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="Controls\MainMenuStrip.cs" />
+        <Compile Include="Controls\MainTabControl.cs" />
+        <Compile Include="Controls\TabControlContextMenuStrip.cs" />
         <Compile Include="MainForm.cs">
             <SubType>Form</SubType>
         </Compile>
