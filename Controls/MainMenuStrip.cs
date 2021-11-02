@@ -4,9 +4,10 @@ namespace LunaEditor.Controls
 {
     public sealed class MainMenuStrip : MenuStrip
     {
+        public const string NAME = "MainMenuStrip";
         public MainMenuStrip()
         {
-            Name = "MainMenuStrip";
+            Name = NAME;
             Dock = DockStyle.Top;
             
             FileDropDownMenu();
