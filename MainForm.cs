@@ -11,18 +11,19 @@ using LunaEditor.Controls;
 
 namespace LunaEditor
 {
-  public partial class Form1 : Form
+  public partial class MainForm : Form
   {
-    public Form1()
+    public MainForm()
     {
       InitializeComponent();
-      MainMenuStrip menuStrip = new MainMenuStrip();
-      Controls.Add(menuStrip);
-    }
-
-    private void Form1_Load(object sender, EventArgs e)
-    {
-      throw new NotImplementedException();
+      
+      var menuStrip = new MainMenuStrip();
+      var mainTabControl = new MainTabControl();
+      
+      mainTabControl.TabPages.Add("Onglet 1");
+      
+      Controls.AddRange(new Control[] { mainTabControl, menuStrip });
+      
     }
   }
 }

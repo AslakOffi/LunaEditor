@@ -2,7 +2,7 @@
 
 namespace LunaEditor
 {
-  partial class Form1
+  partial class MainForm
   {
     /// <summary>
     /// Required designer variable.
@@ -32,17 +32,22 @@ namespace LunaEditor
     {
       this.SuspendLayout();
       // 
-      // Form1
+      // MainForm
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.BackColor = System.Drawing.Color.White;
+      this.BackColor = System.Drawing.SystemColors.Control;
       this.ClientSize = new System.Drawing.Size(800, 450);
-      this.Name = "Form1";
+      this.Name = "MainForm";
       this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
       this.Text = "LunaEditor";
-      this.Load += new System.EventHandler(this.Form1_Load);
+      this.Load += new System.EventHandler(this.MainForm_Load);
       this.ResumeLayout(false);
+    }
+
+    private void MainForm_Load(object sender, EventArgs e)
+    {
+      throw new NotImplementedException();
     }
 
     #endregion
